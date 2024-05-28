@@ -59,4 +59,3 @@ For further details or inquiries, please contact the project maintainer.
 
 ## License
 BSD 3-Clause License
-

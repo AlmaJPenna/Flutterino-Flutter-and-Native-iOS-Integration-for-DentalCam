@@ -1,0 +1,57 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_ffmpeg (0.4.2):
+    - Flutter
+    - flutter_ffmpeg/https (= 0.4.2)
+  - flutter_ffmpeg/https (0.4.2):
+    - Flutter
+    - mobile-ffmpeg-https (= 4.4)
+  - gallery_saver (0.0.1):
+    - Flutter
+  - mobile-ffmpeg-https (4.4)
+  - open_settings_plus (0.0.1):
+    - Flutter
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - permission_handler_apple (9.3.0):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_ffmpeg (from `.symlinks/plugins/flutter_ffmpeg/ios`)
+  - gallery_saver (from `.symlinks/plugins/gallery_saver/ios`)
+  - open_settings_plus (from `.symlinks/plugins/open_settings_plus/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+
+SPEC REPOS:
+  trunk:
+    - mobile-ffmpeg-https
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_ffmpeg:
+    :path: ".symlinks/plugins/flutter_ffmpeg/ios"
+  gallery_saver:
+    :path: ".symlinks/plugins/gallery_saver/ios"
+  open_settings_plus:
+    :path: ".symlinks/plugins/open_settings_plus/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_ffmpeg: 26a01318e1fa4ebdbd1561848050aadc807d51a9
+  gallery_saver: 9fc173c9f4fcc48af53b2a9ebea1b643255be542
+  mobile-ffmpeg-https: 311fc4a8f671cf36d1d6b8f421e8246b790978d9
+  open_settings_plus: 4bd848866fea2becc124581d868a6164cf768831
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
+  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
+
+PODFILE CHECKSUM: 6e700dec67e6deac9b1c69bb14c49a2217a12d15
+
+COCOAPODS: 1.15.2
