@@ -1,4 +1,4 @@
-# Flutterino-Flutter-and-Native-iOS-Integration-for-DentalCam
+# Flutterino: Flutter-and-Native-iOS-Integration-for-DentalCam
 
 ## Overview
 Flutterino is a sophisticated application developed using Flutter for the user interface and Objective-C for native iOS integration. The primary purpose of this app is to facilitate a Wi-Fi connection between the application and a device called DentalCam. Flutterino enables users to capture and save video frames and photos from the DentalCam's camera, as well as record videos.
