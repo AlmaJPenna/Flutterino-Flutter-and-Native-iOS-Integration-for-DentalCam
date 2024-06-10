@@ -1,12 +1,10 @@
 import 'dart:async';
-import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:open_settings_plus/core/open_settings_plus.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:gallery_saver/gallery_saver.dart';
+import 'package:gal/gal.dart';
 import 'dart:io';
-import 'package:permission_handler/permission_handler.dart';
 
 bool _isRecording = false;
 
@@ -182,14 +180,14 @@ class _S700cViewState extends State<S700cView> {
       final imagePath = '${directory.path}/temp_image.png';
       final file = File(imagePath);
       await file.writeAsBytes(imageData);
-      bool? result;
+      bool result = true;
       try {
-        result = await GallerySaver.saveImage(imagePath);
+        await Gal.putImage(imagePath);
       } catch (e) {
-        //print("[DEBUG] Error saving image to gallery: $e");
+        result = false;
       }
 
-      if (result ?? false) {
+      if (result) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text("Immagine salvata con successo"),
@@ -221,14 +219,14 @@ class _S700cViewState extends State<S700cView> {
       final videoPath = '${directory.path}/dental_Cam.mp4';
       final file = File(videoPath);
       await file.writeAsBytes(videoData);
-      bool? result;
+      bool result = true;
       try {
-        result = await GallerySaver.saveVideo(videoPath);
+        await Gal.putVideo(videoPath);
       } catch (e) {
-        //print("[DEBUG] Error saving video to gallery: $e");
+        result = false;
       }
 
-      if (result ?? false) {
+      if (result) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text("Video salvato con successo"),
